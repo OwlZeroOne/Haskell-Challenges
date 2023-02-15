@@ -8,8 +8,8 @@ import Data.Char
 alphabet :: [Char]
 alphabet = ['a'..'z']
 
-isPanagram :: String -> Bool
-isPanagram sentance = and (lettersInSentance sentance)
+isPangram :: String -> Bool
+isPangram sentance = and (lettersInSentance sentance)
 
 lettersInSentance :: String -> [Bool]
 lettersInSentance sentance = [letter `elem` sentance || (toUpper letter) `elem` sentance
